@@ -1,4 +1,4 @@
-# Ambiente PostgreSQL automatizado!!!
+# Ambiente PostgreSQL automatizado! (git)
 
 Este projeto levanta um ambiente completo com:
 
