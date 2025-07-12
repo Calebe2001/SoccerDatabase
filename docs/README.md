@@ -114,7 +114,7 @@ O banco contém 12 tabelas normalizadas com dados de:
 
 ## Docker compose (subir 1 parte)
 
-docker compose up -d maquina1 maquina2 maquina3 dw grafana postgresql-exporter
+docker compose up -d maquina1 maquina2 maquina3 dw grafana pgadmin postgresql-exporter
 
 ## Arquivos para o airflow
 -> corno job (pegar scripts da tabelas normalizadas) -> sql dentro da maquina1
