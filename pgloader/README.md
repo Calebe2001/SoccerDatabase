@@ -27,24 +27,6 @@ sqlite3 base.sqlite < comprehensive_clean.sql
 sudo bash run.sh
 ```
 
-## 🔧 Problemas Resolvidos
-
-### Problema 1: Foreign Key Constraints
-**Sintoma:** Erro de foreign key mismatch durante a carga
-**Solução:** Remoção de foreign key constraints problemáticas no SQLite
-
-### Problema 2: Valores "NIL"
-**Sintoma:** Erro "invalid input syntax for type bigint: NIL"
-**Solução:** Conversão de valores "NIL" para NULL
-
-### Problema 3: Referências Inválidas
-**Sintoma:** Jogadores referenciados em Match que não existem em Player
-**Solução:** Filtragem de registros com referências válidas
-
-### Problema 4: Configuração de Porta
-**Sintoma:** Erro de conexão recusada
-**Solução:** Correção da porta de 15432 para 5432
-
 ## 📊 Estrutura da Base
 
 ### Tabelas Originais (SQLite)
@@ -64,9 +46,15 @@ sudo bash run.sh
 ## ⚠️ Importante
 
 - O arquivo `base.sqlite` já está limpo e pronto para uso
-- Execute `comprehensive_clean.sql` apenas se tiver um arquivo original com problemas
 - O PGLoader está configurado para conectar na porta 5432 (PostgreSQL padrão)
 - Todos os dados são carregados no schema `campeonato`
+
+## 🔧 Problemas Resolvidos
+✅ Conversão de valores "NIL" para NULL
+✅ Correção de tipos de dados numéricos
+✅ Remoção de foreign key constraints problemáticas
+✅ Limpeza de dados inconsistentes
+✅ 218.191 registros carregados com sucesso
 
 ## 📈 Resultado Final
 
