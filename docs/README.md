@@ -32,3 +32,15 @@ docker compose up -d maquina1 maquina2 maquina3 dw grafana postgresql-exporter
 -> dentro da pasta airflow, definir as models pra realizar o processo de elt na maquina1 pro dw
 
 -> mostrar backup, restauração, monitoramento (query pesada)
+
+## Registros
+
+Quantidade de registros em cada tabela: (após validação de dados)
+
+Country: 11
+League: 11
+Team: 288
+Player: 11.060
+Player_Attributes: 181.265
+Team_Attributes: 489
+Match: 21.374
