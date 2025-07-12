@@ -45,6 +45,15 @@ Este documento descreve o processo de normalização realizado na base de dados 
 
 #### 3.1 População da Tabela SEASON
 
+#### 3.2 População da Tabela MATCH_PLAYERS
+
+#### 3.3 População da Tabela MATCH_ODDS
+
+### Passo 4: Criação de Índices
+
+## Estrutura Final
+
+```
 campeonato/
 ├── country (1)
 ├── league (2) → country
@@ -58,6 +67,7 @@ campeonato/
 ├── match_players (10) → match, team, player
 ├── match_events (11) → match, player, team
 └── match_odds (12) → match
+```
 
 ## Scripts Disponíveis
 
